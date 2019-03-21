@@ -1,0 +1,16 @@
+2019-03-21 07:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "INSERT INTO FRUITS (1[*], 'Apple'); "; 期待されるステートメント "identifier"
+Syntax error in SQL statement "INSERT INTO FRUITS (1[*], 'Apple'); "; expected "identifier"; SQL statement:
+insert into fruits (1, 'Apple'); [42001-197]
+2019-03-21 07:30:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: テーブル "FRUITS" はすでに存在します
+Table "FRUITS" already exists; SQL statement:
+create table fruits (id integer, name varchar); [42101-197]
+2019-03-21 07:34:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: テーブル "FRUITS" はすでに存在します
+Table "FRUITS" already exists; SQL statement:
+create table fruits (id integer, name varchar); [42101-197]
+2019-03-21 07:35:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "INSERT INTO FRUITS (1[*], 'Apple'); "; 期待されるステートメント "identifier"
+Syntax error in SQL statement "INSERT INTO FRUITS (1[*], 'Apple'); "; expected "identifier"; SQL statement:
+insert into fruits (1, 'Apple'); [42001-197]

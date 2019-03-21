@@ -1,0 +1,20 @@
+2019-03-21 07:38:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "INSERT INTO FRUITS (1[*], 'Apple'); "; 期待されるステートメント "identifier"
+Syntax error in SQL statement "INSERT INTO FRUITS (1[*], 'Apple'); "; expected "identifier"; SQL statement:
+insert into fruits (1, 'Apple'); [42001-197]
+2019-03-21 07:38:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "INSERT INTO FRUITS (1[*], 'Apple'); "; 期待されるステートメント "identifier"
+Syntax error in SQL statement "INSERT INTO FRUITS (1[*], 'Apple'); "; expected "identifier"; SQL statement:
+insert into fruits (1, 'Apple'); [42001-197]
+2019-03-21 09:53:09 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CREATE TABLE IF EXISTS[*] FRUITS ( ID BIGSERIAL NOT NULL, NAME VARCHAR, PRICE INT ) "; 期待されるステートメント "NOT"
+Syntax error in SQL statement "CREATE TABLE IF EXISTS[*] FRUITS ( ID BIGSERIAL NOT NULL, NAME VARCHAR, PRICE INT ) "; expected "NOT"; SQL statement:
+create table if exists fruits ( id bigserial not null, name varchar, price int ) [42001-197]
+2019-03-21 09:56:06 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CREATE TABLE IF EXISTS[*] FRUITS ( ID IDENTITY NOT NULL, NAME VARCHAR, PRICE INT ) "; 期待されるステートメント "NOT"
+Syntax error in SQL statement "CREATE TABLE IF EXISTS[*] FRUITS ( ID IDENTITY NOT NULL, NAME VARCHAR, PRICE INT ) "; expected "NOT"; SQL statement:
+create table if exists fruits ( id identity not null, name varchar, price int ) [42001-197]
+2019-03-21 09:56:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CREATE TABLE IF EXISTS[*] FRUITS ( ID IDENTITY NOT NULL, NAME VARCHAR, PRICE INT ) "; 期待されるステートメント "NOT"
+Syntax error in SQL statement "CREATE TABLE IF EXISTS[*] FRUITS ( ID IDENTITY NOT NULL, NAME VARCHAR, PRICE INT ) "; expected "NOT"; SQL statement:
+create table if exists fruits ( id identity not null, name varchar, price int ) [42001-197]
