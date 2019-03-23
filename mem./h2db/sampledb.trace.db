@@ -18,3 +18,7 @@ create table if exists fruits ( id identity not null, name varchar, price int ) 
 org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CREATE TABLE IF EXISTS[*] FRUITS ( ID IDENTITY NOT NULL, NAME VARCHAR, PRICE INT ) "; 期待されるステートメント "NOT"
 Syntax error in SQL statement "CREATE TABLE IF EXISTS[*] FRUITS ( ID IDENTITY NOT NULL, NAME VARCHAR, PRICE INT ) "; expected "NOT"; SQL statement:
 create table if exists fruits ( id identity not null, name varchar, price int ) [42001-197]
+2019-03-23 08:29:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: テーブル "FRUITS" はすでに存在します
+Table "FRUITS" already exists; SQL statement:
+create table fruits (id serial, name varchar) [42101-197]

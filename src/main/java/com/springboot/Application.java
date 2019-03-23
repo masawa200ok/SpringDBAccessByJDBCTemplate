@@ -15,14 +15,4 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-//	@Autowired
-//	JdbcTemplate jdbc;
-//	
-//	public void run(String... args) {
-//		jdbc.execute("create table fruits (id serial, name varchar)");
-//		List<Map<String, Object>> list = jdbc.queryForList("select * from fruits");
-//		
-//		list.stream()
-//			.forEach(map -> System.out.println(map.get("id")));
-//	}
 }
